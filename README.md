@@ -14,16 +14,12 @@ This generates the html for the pages in the quotes.spider file.
 - If you would prefer you can copy the following into the CLI:
 ```python
 for quote in response.css("div.quote"):
-
-    text = quote.css("span.text::text").get()
-
-    author = quote.css("small.author::text").get()
-
-    tags = quote.css("div.tags a.tag::text").getall()
-
-    print(dict(text=text, author=author, tags=tags))
+     text = quote.css("span.text::text").get()
+     author = quote.css("small.author::text").get()
+     tags = quote.css("div.tags a.tag::text").getall()
+     print(dict(text=text, author=author, tags=tags))
 ```
 
 
 
-Actual Spider crawler setup a work in progress.
+Actual Spider crawler setup a work in progress...
