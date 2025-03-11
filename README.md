@@ -20,6 +20,10 @@ for quote in response.css("div.quote"):
      print(dict(text=text, author=author, tags=tags))
 ```
 
+Now that there's a basic understaning of commands, you can use the folliwng command to get workable JSON's for what was scrapped.
 
+```python
+scrapy crawl quotes -o quotes.jsonl
 
-Actual Spider crawler setup a work in progress...
+```
+The command tells it to scrape and show the the quotes function class, with the -o overwriting the files, and telling it to print to a quotes.json files.
